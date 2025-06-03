@@ -22,6 +22,7 @@ async def readiness_check(session: Session = Depends(db.get_session)) -> JSONRes
     try:
         session.exec(select(1))
         return JSONResponse(
+            status_code=200,
             content=ReadinessResponse(
                 status="ready",
                 database="connected"
