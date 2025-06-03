@@ -4,7 +4,7 @@ from typing import Optional, List
 class UserCreate(BaseModel):
     name: str
     email: EmailStr
-    is_active: bool = True
+    is_active: Optional[bool] = True
 
 class UserUpdate(BaseModel):
     name: Optional[str] = None
