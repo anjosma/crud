@@ -14,7 +14,8 @@ logger = logging.getLogger(__name__)
 app = FastAPI(
     title="User Management API",
     description="User management API with SQLite database",
-    version="1.0.0"
+    version="1.0.0",
+    root_path="/api/v1"
 )
 
 logger.info("Starting application")
