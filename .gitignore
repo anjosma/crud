@@ -7,6 +7,7 @@ __pycache__
 
 # Test
 .coverage
+htmlcov
 
 # Database
 *.db
