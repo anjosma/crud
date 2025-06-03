@@ -9,7 +9,7 @@ def test_create_user(client: TestClient):
         "/users/",
         json={"name": "John Doe", "email": "john@example.com"}
     )
-    assert response.status_code == 200
+    assert response.status_code == 201
     data = response.json()
     assert data["name"] == "John Doe"
     assert data["email"] == "john@example.com"
