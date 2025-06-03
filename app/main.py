@@ -1,7 +1,7 @@
 import logging
 import os
 from fastapi import FastAPI
-from app.routes import users
+from app.routes import users, health
 from app.dependencies import db
 
 logger = logging.getLogger(__name__)
@@ -14,6 +14,7 @@ app = FastAPI(
 )
 
 app.include_router(users.router)
+app.include_router(health.router)
 
 @app.on_event("startup")
 def on_startup():
