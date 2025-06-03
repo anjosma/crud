@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  tests:
+    build:
+      context: ..
+      dockerfile: dev/Dockerfile
+    volumes:
+      - ..:/app
+    command: python -m pytest
+    environment:
+      - PYTHONPATH=/app
+      - LOG_LEVEL=DEBUG
+    networks:
+      - test-network
+
+networks:
+  test-network:
+    driver: bridge 

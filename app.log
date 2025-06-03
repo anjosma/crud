@@ -1,0 +1,75 @@
+2025-06-02 22:54:48,479 - app.utils.database - INFO - Creating database and tables
+2025-06-02 22:55:40,953 - app.utils.database - INFO - Creating database and tables
+2025-06-02 22:55:41,854 - app.utils.database - INFO - Creating database and tables
+2025-06-02 22:55:42,828 - app.utils.database - INFO - Creating database and tables
+2025-06-02 22:55:44,111 - app.utils.database - INFO - Creating database and tables
+2025-06-02 22:55:48,914 - app.utils.database - INFO - Creating database and tables
+2025-06-02 22:55:53,838 - app.utils.database - INFO - Creating database and tables
+2025-06-02 22:56:01,337 - app.utils.database - INFO - Creating database and tables
+2025-06-02 22:56:22,671 - app.utils.database - INFO - Creating database and tables
+2025-06-02 22:56:45,863 - app.utils.database - INFO - Creating database and tables
+2025-06-02 22:56:46,834 - app.utils.database - INFO - Creating database and tables
+2025-06-02 23:01:41,930 - app.database.sqlite - INFO - Creating SQLite database and tables
+2025-06-02 23:01:41,930 - app.database.sqlite - DEBUG - Creating new SQLite engine with URL: sqlite:///database.db
+2025-06-02 23:03:46,408 - app.database.sqlite - INFO - Creating SQLite database and tables
+2025-06-02 23:03:46,409 - app.database.sqlite - DEBUG - Creating new SQLite engine with URL: sqlite:///database.db
+2025-06-02 23:04:25,762 - app.database.sqlite - INFO - Creating SQLite database and tables
+2025-06-02 23:04:25,762 - app.database.sqlite - DEBUG - Creating new SQLite engine with URL: sqlite:///database.db
+2025-06-02 23:04:35,351 - app.database.sqlite - INFO - Creating SQLite database and tables
+2025-06-02 23:04:35,351 - app.database.sqlite - DEBUG - Creating new SQLite engine with URL: sqlite:///database.db
+2025-06-02 23:04:46,782 - app.database.sqlite - INFO - Creating SQLite database and tables
+2025-06-02 23:04:46,782 - app.database.sqlite - DEBUG - Creating new SQLite engine with URL: sqlite:///database.db
+2025-06-02 23:04:56,047 - app.main - INFO - Initializing database
+2025-06-02 23:04:56,047 - app.database.sqlite - INFO - Creating SQLite database and tables
+2025-06-02 23:04:56,048 - app.database.sqlite - DEBUG - Creating new SQLite engine with URL: sqlite:///database.db
+2025-06-02 23:05:02,627 - app.main - INFO - Initializing database
+2025-06-02 23:05:02,627 - app.database.sqlite - INFO - Creating SQLite database and tables
+2025-06-02 23:05:02,627 - app.database.sqlite - DEBUG - Creating new SQLite engine with URL: sqlite:///database.db
+2025-06-02 23:05:09,196 - app.main - INFO - Initializing database
+2025-06-02 23:05:09,196 - app.database.sqlite - INFO - Creating SQLite database and tables
+2025-06-02 23:05:09,196 - app.database.sqlite - DEBUG - Creating new SQLite engine with URL: sqlite:///database.db
+2025-06-02 23:05:17,958 - app.main - INFO - Initializing database
+2025-06-02 23:05:17,959 - app.database.sqlite - INFO - Creating SQLite database and tables
+2025-06-02 23:05:17,959 - app.database.sqlite - DEBUG - Creating new SQLite engine with URL: sqlite:///database.db
+2025-06-02 23:11:28,195 - app.main - INFO - Initializing database
+2025-06-02 23:11:28,195 - app.database.sqlite - INFO - Creating SQLite database and tables
+2025-06-02 23:11:28,195 - app.database.sqlite - DEBUG - Creating new SQLite engine with URL: sqlite:///database.db
+2025-06-02 23:11:49,273 - app.main - INFO - Initializing database
+2025-06-02 23:11:49,273 - app.database.sqlite - INFO - Creating SQLite database and tables
+2025-06-02 23:11:49,273 - app.database.sqlite - DEBUG - Creating new SQLite engine with URL: sqlite:///database.db
+2025-06-02 23:11:53,874 - app.main - INFO - Initializing database
+2025-06-02 23:11:53,874 - app.database.sqlite - INFO - Creating SQLite database and tables
+2025-06-02 23:11:53,875 - app.database.sqlite - DEBUG - Creating new SQLite engine with URL: sqlite:///database.db
+2025-06-02 23:12:01,382 - app.main - INFO - Initializing database
+2025-06-02 23:12:01,382 - app.database.sqlite - INFO - Creating SQLite database and tables
+2025-06-02 23:12:01,382 - app.database.sqlite - DEBUG - Creating new SQLite engine with URL: sqlite:///database.db
+2025-06-02 23:12:05,426 - app.main - INFO - Initializing database
+2025-06-02 23:12:05,426 - app.database.sqlite - INFO - Creating SQLite database and tables
+2025-06-02 23:12:05,426 - app.database.sqlite - DEBUG - Creating new SQLite engine with URL: sqlite:///database.db
+2025-06-02 23:12:18,221 - app.main - INFO - Initializing database
+2025-06-02 23:12:18,221 - app.database.sqlite - INFO - Creating SQLite database and tables
+2025-06-02 23:12:18,221 - app.database.sqlite - DEBUG - Creating new SQLite engine with URL: sqlite:///database.db
+2025-06-02 23:12:19,033 - app.main - INFO - Closing database connection
+2025-06-02 23:12:19,683 - app.main - INFO - Initializing database
+2025-06-02 23:12:19,683 - app.database.sqlite - INFO - Creating SQLite database and tables
+2025-06-02 23:12:19,683 - app.database.sqlite - DEBUG - Creating new SQLite engine with URL: sqlite:///database.db
+2025-06-02 23:12:20,898 - app.main - INFO - Closing database connection
+2025-06-02 23:12:21,654 - app.main - INFO - Initializing database
+2025-06-02 23:12:21,654 - app.database.sqlite - INFO - Creating SQLite database and tables
+2025-06-02 23:12:21,654 - app.database.sqlite - DEBUG - Creating new SQLite engine with URL: sqlite:///database.db
+2025-06-02 23:11:58,837 - app.main - INFO - Initializing database
+2025-06-02 23:11:58,837 - app.database.sqlite - INFO - Creating SQLite database and tables
+2025-06-02 23:11:58,838 - app.database.sqlite - DEBUG - Creating new SQLite engine with URL: sqlite:///database.db
+2025-06-02 23:12:26,457 - app.main - INFO - Closing database connection
+2025-06-02 23:12:34,326 - app.main - INFO - Initializing database
+2025-06-02 23:12:34,327 - app.database.sqlite - INFO - Creating SQLite database and tables
+2025-06-02 23:12:34,327 - app.database.sqlite - DEBUG - Creating new SQLite engine with URL: sqlite:///database.db
+2025-06-02 23:12:45,694 - app.main - INFO - Closing database connection
+2025-06-02 23:12:46,494 - app.main - INFO - Initializing database
+2025-06-02 23:12:46,494 - app.database.sqlite - INFO - Creating SQLite database and tables
+2025-06-02 23:12:46,495 - app.database.sqlite - DEBUG - Creating new SQLite engine with URL: sqlite:///database.db
+2025-06-02 23:12:47,309 - app.main - INFO - Closing database connection
+2025-06-02 23:12:47,997 - app.main - INFO - Initializing database
+2025-06-02 23:12:47,998 - app.database.sqlite - INFO - Creating SQLite database and tables
+2025-06-02 23:12:47,998 - app.database.sqlite - DEBUG - Creating new SQLite engine with URL: sqlite:///database.db
+2025-06-02 23:36:33,908 - app.main - INFO - Closing database connection
