@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends
 from fastapi.responses import JSONResponse
 from sqlmodel import Session, select
 from app.dependencies import db
-from app.models.health import HealthResponse, ReadinessResponse
+from app.schemas.health import HealthResponse, ReadinessResponse
 
 router = APIRouter(
     prefix="/health",
