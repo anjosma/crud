@@ -4,8 +4,12 @@ from fastapi import FastAPI
 from app.routes import users, health
 from app.dependencies import db
 
+log_level = os.getenv("LOG_LEVEL", "INFO").upper()
+logging.basicConfig(
+    level=log_level,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
 logger = logging.getLogger(__name__)
-logger.setLevel(getattr(logging, os.getenv("LOG_LEVEL", "INFO")))
 
 app = FastAPI(
     title="User Management API",
@@ -13,8 +17,13 @@ app = FastAPI(
     version="1.0.0"
 )
 
+logger.info("Starting application")
+
 app.include_router(users.router)
+logger.debug("Included users router")
+
 app.include_router(health.router)
+logger.debug("Included health router")
 
 @app.on_event("startup")
 def on_startup():
