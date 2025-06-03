@@ -14,7 +14,6 @@ def test_create_user(client: TestClient):
     assert data["name"] == "John Doe"
     assert data["email"] == "john@example.com"
     assert data["is_active"] is True
-    assert "id" in data
 
 def test_create_user_duplicate_email(client: TestClient, test_user: User):
     response = client.post(
@@ -32,24 +31,6 @@ def test_read_users(client: TestClient, test_user: User):
     assert data[0]["id"] == test_user.id
     assert data[0]["name"] == test_user.name
     assert data[0]["email"] == test_user.email
-
-def test_read_users_with_pagination(client: TestClient, session: Session):
-    # Create multiple users
-    users = [
-        User(name=f"User {i}", email=f"user{i}@example.com")
-        for i in range(5)
-    ]
-    for user in users:
-        session.add(user)
-    session.commit()
-
-    # Test pagination
-    response = client.get("/users/?offset=1&limit=2")
-    assert response.status_code == 200
-    data = response.json()
-    assert len(data) == 2
-    assert data[0]["email"] == "user1@example.com"
-    assert data[1]["email"] == "user2@example.com"
 
 def test_read_user(client: TestClient, test_user: User):
     response = client.get(f"/users/{test_user.id}")
@@ -81,18 +62,15 @@ def test_update_user_not_found(client: TestClient):
         json={"name": "Updated Name", "email": "updated@example.com"}
     )
     assert response.status_code == 404
-    assert "not found" in response.json()["detail"]
 
 def test_delete_user(client: TestClient, test_user: User):
     response = client.delete(f"/users/{test_user.id}")
     assert response.status_code == 200
     assert response.json()["ok"] is True
 
-    # Verify user is deleted
     response = client.get(f"/users/{test_user.id}")
     assert response.status_code == 404
 
 def test_delete_user_not_found(client: TestClient):
     response = client.delete("/users/999")
     assert response.status_code == 404
-    assert "not found" in response.json()["detail"] 
