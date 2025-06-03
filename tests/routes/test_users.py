@@ -27,10 +27,11 @@ def test_read_users(client: TestClient, test_user: User):
     response = client.get("/users/")
     assert response.status_code == 200
     data = response.json()
-    assert len(data) == 1
-    assert data[0]["id"] == test_user.id
-    assert data[0]["name"] == test_user.name
-    assert data[0]["email"] == test_user.email
+    assert "items" in data
+    assert len(data["items"]) == 1
+    assert data["items"][0]["id"] == test_user.id
+    assert data["items"][0]["name"] == test_user.name
+    assert data["items"][0]["email"] == test_user.email
 
 def test_read_user(client: TestClient, test_user: User):
     response = client.get(f"/users/{test_user.id}")

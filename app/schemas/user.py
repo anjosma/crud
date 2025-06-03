@@ -1,5 +1,5 @@
 from pydantic import BaseModel, EmailStr
-from typing import Optional
+from typing import Optional, List
 
 class UserCreate(BaseModel):
     name: str
@@ -15,4 +15,10 @@ class UserResponse(BaseModel):
     id: int
     name: str
     email: str
-    is_active: bool 
+    is_active: bool
+
+class DeleteResponse(BaseModel):
+    ok: bool
+
+class UserListResponse(BaseModel):
+    items: List[UserResponse]
