@@ -44,6 +44,7 @@ We can run the application with Docker and using an Python virtual environment:
 ```bash
 python -m venv .venv
 source .venv/bin/activate
+pip install -r requirements.txt
 ```
 
 2. Run the application:
